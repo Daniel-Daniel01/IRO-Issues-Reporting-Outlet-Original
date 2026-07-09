@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Reports | IRO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><i class="fa-solid fa-bullhorn"></i> IRO</a>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="report.html">Report Issue</a>
+      <a href="reports.html" class="active">My Reports</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="index.html" class="btn btn-outline">Log Out</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-wrap">
+  <div class="container">
+    <div class="section-head" style="text-align:left; margin-bottom:28px;">
+      <span class="eyebrow">Overview</span>
+      <h2>My Reports</h2>
+      <p>Track the status of every issue you've reported.</p>
+    </div>
+
+    <div class="table-toolbar">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="road">Road</button>
+        <button class="filter-btn" data-filter="water">Water</button>
+        <button class="filter-btn" data-filter="electricity">Electricity</button>
+        <button class="filter-btn" data-filter="security">Security</button>
+        <button class="filter-btn" data-filter="hostel">Hostel</button>
+      </div>
+      <input type="text" class="search-input" placeholder="Search reports...">
+    </div>
+
+    <div class="table-wrap">
+      <table class="reports-table">
+        <thead>
+          <tr><th>ID</th><th>Title</th><th>Category</th><th>Location</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr data-category="road">
+            <td>001</td><td>Poor Road Condition</td><td>Road</td><td>Akungba</td>
+            <td><span class="status-badge pending">Pending</span></td>
+          </tr>
+          <tr data-category="water">
+            <td>002</td><td>Water Shortage</td><td>Water</td><td>Iwaro</td>
+            <td><span class="status-badge resolved">Resolved</span></td>
+          </tr>
+          <tr data-category="electricity">
+            <td>003</td><td>Broken Street Light</td><td>Electricity</td><td>Etioro</td>
+            <td><span class="status-badge progress">In Progress</span></td>
+          </tr>
+          <tr data-category="security">
+            <td>004</td><td>Unsecured Back Gate</td><td>Security</td><td>Ayegunle</td>
+            <td><span class="status-badge pending">Pending</span></td>
+          </tr>
+          <tr data-category="hostel">
+            <td>005</td><td>Leaking Hostel Roof</td><td>Hostel</td><td>Akungba</td>
+            <td><span class="status-badge progress">In Progress</span></td>
+          </tr>
+          <tr data-category="road">
+            <td>006</td><td>Blocked Drainage</td><td>Road</td><td>Iwaro</td>
+            <td><span class="status-badge resolved">Resolved</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

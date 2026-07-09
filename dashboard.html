@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | IRO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><i class="fa-solid fa-bullhorn"></i> IRO</a>
+    <nav class="nav-links">
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="report.html">Report Issue</a>
+      <a href="reports.html">My Reports</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="index.html" class="btn btn-outline">Log Out</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="dash-header">
+  <div class="container">
+    <div>
+      <h1>Welcome, Daniel 👋</h1>
+      <p>Here's what's happening with your reports today.</p>
+    </div>
+    <div class="user-chip">
+      <div class="avatar">DA</div>
+      <div>
+        <div style="font-weight:600; font-size:14px;">Daniel Okafor</div>
+        <div style="font-size:12.5px; color:var(--text-light);">Student</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-wrap" style="padding-top:0;">
+  <div class="container">
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="num">12</div>
+        <div class="label">Total Reports</div>
+      </div>
+      <div class="stat-card pending">
+        <div class="num">4</div>
+        <div class="label">Pending</div>
+      </div>
+      <div class="stat-card resolved">
+        <div class="num">6</div>
+        <div class="label">Resolved</div>
+      </div>
+      <div class="stat-card progress">
+        <div class="num">2</div>
+        <div class="label">In Progress</div>
+      </div>
+    </div>
+
+    <div class="quick-actions">
+      <a href="report.html" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Submit Report</a>
+      <a href="reports.html" class="btn btn-outline"><i class="fa-solid fa-list"></i> View Reports</a>
+      <a href="#" class="btn btn-outline"><i class="fa-solid fa-user"></i> Profile</a>
+    </div>
+
+    <div class="section-head" style="text-align:left; margin-bottom:20px;">
+      <h2 style="font-size:22px;">Recent Activity</h2>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>ID</th><th>Title</th><th>Category</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td><td>Poor Road Condition</td><td>Road</td>
+            <td><span class="status-badge pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td>002</td><td>Water Shortage</td><td>Water</td>
+            <td><span class="status-badge resolved">Resolved</span></td>
+          </tr>
+          <tr>
+            <td>003</td><td>Broken Street Light</td><td>Electricity</td>
+            <td><span class="status-badge progress">In Progress</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

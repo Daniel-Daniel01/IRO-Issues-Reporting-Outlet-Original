@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report an Issue | IRO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><i class="fa-solid fa-bullhorn"></i> IRO</a>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="report.html" class="active">Report Issue</a>
+      <a href="reports.html">My Reports</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="index.html" class="btn btn-outline">Log Out</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-wrap">
+  <div class="container" style="max-width:720px;">
+    <div class="section-head" style="text-align:left; margin-bottom:32px;">
+      <span class="eyebrow">New Report</span>
+      <h2>Report an Issue</h2>
+      <p>Fill in the details below. The more specific you are, the faster it can be resolved.</p>
+    </div>
+
+    <div class="success-banner">
+      <i class="fa-solid fa-circle-check"></i> Your report has been submitted successfully!
+    </div>
+
+    <div class="auth-card" style="max-width:none;">
+      <form class="validate-form" novalidate>
+        <div class="form-group">
+          <label for="issueTitle">Issue Title</label>
+          <input type="text" id="issueTitle" required placeholder="e.g. Pothole on main road">
+          <div class="form-error">Please enter a title for the issue</div>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" required>
+            <option value="">Select a category</option>
+            <option value="road">Road</option>
+            <option value="security">Security</option>
+            <option value="electricity">Electricity</option>
+            <option value="water">Water</option>
+            <option value="hostel">Hostel</option>
+            <option value="others">Others</option>
+          </select>
+          <div class="form-error">Please select a category</div>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <select id="location" required>
+            <option value="">Select a location</option>
+            <option value="akungba">Akungba</option>
+            <option value="iwaro">Iwaro</option>
+            <option value="etioro">Etioro</option>
+            <option value="ayegunle">Ayegunle</option>
+          </select>
+          <div class="form-error">Please select a location</div>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" required placeholder="Describe the issue in detail..."></textarea>
+          <div class="form-error">Please describe the issue</div>
+        </div>
+
+        <div class="form-group">
+          <label>Upload Image</label>
+          <label class="file-upload" for="issueImage">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <span>Choose a file or drag it here</span>
+          </label>
+          <input type="file" id="issueImage" accept="image/*" style="display:none;">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Submit Report</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

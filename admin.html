@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | IRO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><i class="fa-solid fa-bullhorn"></i> IRO</a>
+    <nav class="nav-links">
+      <a href="admin.html" class="active">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="index.html" class="btn btn-outline">Log Out</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="dash-header">
+  <div class="container">
+    <div>
+      <h1>Admin Dashboard</h1>
+      <p>Overview of all reports submitted across the community.</p>
+    </div>
+    <div class="user-chip">
+      <div class="avatar" style="background:var(--primary);">AD</div>
+      <div>
+        <div style="font-weight:600; font-size:14px;">Admin</div>
+        <div style="font-size:12.5px; color:var(--text-light);">Administrator</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-wrap" style="padding-top:0;">
+  <div class="container">
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="num">120</div>
+        <div class="label">Total Reports</div>
+      </div>
+      <div class="stat-card pending">
+        <div class="num">40</div>
+        <div class="label">Pending</div>
+      </div>
+      <div class="stat-card resolved">
+        <div class="num">65</div>
+        <div class="label">Resolved</div>
+      </div>
+      <div class="stat-card progress">
+        <div class="num">15</div>
+        <div class="label">In Progress</div>
+      </div>
+    </div>
+
+    <div class="table-toolbar">
+      <div class="section-head" style="text-align:left; margin:0;">
+        <h2 style="font-size:22px;">Recent Reports</h2>
+      </div>
+      <input type="text" class="search-input" placeholder="Search reports...">
+    </div>
+
+    <div class="table-wrap">
+      <table class="reports-table">
+        <thead>
+          <tr><th>Reporter</th><th>Category</th><th>Location</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr data-category="road">
+            <td>John Adeyemi</td><td>Road</td><td>Akungba</td>
+            <td><span class="status-badge pending">Pending</span></td>
+          </tr>
+          <tr data-category="water">
+            <td>Mary Johnson</td><td>Water</td><td>Iwaro</td>
+            <td><span class="status-badge resolved">Resolved</span></td>
+          </tr>
+          <tr data-category="electricity">
+            <td>Chidi Obi</td><td>Electricity</td><td>Etioro</td>
+            <td><span class="status-badge progress">In Progress</span></td>
+          </tr>
+          <tr data-category="security">
+            <td>Sarah Bello</td><td>Security</td><td>Ayegunle</td>
+            <td><span class="status-badge pending">Pending</span></td>
+          </tr>
+          <tr data-category="hostel">
+            <td>David Okon</td><td>Hostel</td><td>Akungba</td>
+            <td><span class="status-badge resolved">Resolved</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
