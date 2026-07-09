@@ -10,6 +10,8 @@ A simple front-end demo of a community issue reporting system, built with plain 
 - `report.html` — Submit an issue (with validation)
 - `reports.html` — My Reports table (filter + search)
 - `admin.html` — Admin dashboard demo
+- Also contain's the compulsory SRS document
+- case diagram presnt as well (saved as drive-download...)
 
 ## How to view
 https://daniel-daniel01.github.io/IRO-Issues-Reporting-Outlet-Original/
