@@ -12,9 +12,9 @@ A simple front-end demo of a community issue reporting system, built with plain 
 - `admin.html` — Admin dashboard demo
 
 ## How to view
-Just open `index.html` in any web browser. No installation or server needed.
+https://daniel-daniel01.github.io/IRO-Issues-Reporting-Outlet-Original/
 
 ## Notes
-- All data (users, reports) is dummy/demo data — nothing is actually saved.
+- All data (users, reports) 
 - Forms use simple JavaScript validation for required fields.
 - Built to be responsive across desktop, tablet, and mobile.
